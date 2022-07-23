@@ -1,5 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <iostream>
 
 template <class T>
 class Calculator
@@ -51,11 +50,11 @@ public:
 int main()
 {
     Calculator<int> calc(1, 1);
-    cout << "Enter first number: " << endl;
-    cin >> calc.num1;
-    cout << "Enter second number: " << endl;
-    cin >> calc.num2;
-    cout << "Enter one of the following operations to perform: +, -, *, /";
-    cin >> calc.operation;
-    cout << "The result is: " << calc.result() << endl;
+    std::cout << "Enter first number: " << std::endl;
+    std::cin >> calc.num1;
+    std::cout << "Enter second number: " << std::endl;
+    std::cin >> calc.num2;
+    std::cout << "Enter one of the following operations to perform: +, -, *, /";
+    std::cin >> calc.operation;
+    std::cout << "The result is: " << calc.result() << std::endl;
 }

@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <iostream>
+#include <vector>
 
 // swap takes pointers to integers and swaps
 // the content of the memory location
@@ -12,7 +12,7 @@ void swap(int *a, int *b)
 
 // bubble sort takes a reference to an array
 // and sorts its contents in ascending order
-void bubbleSort(vector<int> &vec)
+void bubbleSort(std::vector<int> &vec)
 {
     int n = vec.size();
     for (int i = 0; i < n; i++)
@@ -28,18 +28,18 @@ void bubbleSort(vector<int> &vec)
 }
 
 // prints a vector on one line
-void printVector(vector<int> &vec)
+void printVector(std::vector<int> &vec)
 {
     for (const int num : vec)
     {
-        cout << num << ",";
+        std::cout << num << ",";
     }
-    cout << "\n";
+    std::cout << "\n";
 }
 
 int main()
 {
-    vector<int> vec{1, 3, 8, 2, 9, 2, 5, 6, -9};
+    std::vector<int> vec{1, 3, 8, 2, 9, 2, 5, 6, -9};
     printVector(vec);
     bubbleSort(vec);
     printVector(vec);

@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
 // swap takes pointers to numbers
 // in an array an swaps the numbers
