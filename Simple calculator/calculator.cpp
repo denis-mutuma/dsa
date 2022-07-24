@@ -1,3 +1,5 @@
+// Sample calculator class in C++
+
 #include <iostream>
 
 template <class T>
